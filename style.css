@@ -4,7 +4,9 @@
 
 }
 
-html {}
+html {
+    scroll-behavior: smooth;
+}
 
 
 
@@ -15,6 +17,7 @@ html {}
     margin: 0px;
     box-sizing: border-box;
     color: white;
+    cursor: none;
 }
 
 
@@ -32,6 +35,9 @@ body {
     cursor: none;
 }
 
+.links a {
+    cursor: none;
+}
 
 
 /* contianer */
@@ -78,18 +84,20 @@ body {
     border: 1px solid #00ff55;
     transition: all 0.2s ease-in;
 }
+
 .card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: appear 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: appear 0.8s ease-out forwards;
 }
 
 @keyframes appear {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 /* profile image */
 
 .image {
@@ -227,7 +235,6 @@ body {
 
 .fa-brands:hover {
     transform: scale(0.9);
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
@@ -585,6 +592,7 @@ body {
     z-index: 9999;
     transform: translate(-50%, -50%);
     background: #00c467;
+    cursor: none;
 }
 
 
@@ -766,95 +774,99 @@ body {
 
     .contact-section {
         width: 300px;
-
-        .custom-cursor {
-            display: none;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-        }
-
-
-
-        .contact-info-box {
-            padding: 16px 1px;
-            border: 1px solid gray;
-            width: 21rem;
-            height: 4rem;
-            padding: 10px;
-
-        }
-
-        .contact-info-text {
-            width: 100%;
-            /* border: 1px solid white; */
-        }
-
-        .contact-form {}
-
-        .contact-header {
-            width: 9px;
-        }
-
-        .contact-form {}
-
-
-        .form-field {
-            border: 1px solid white;
-            width: 21rem;
-        }
-
-        .send-btn {
-            width: 21rem;
-
-        }
     }
 
+    .custom-cursor {
+        cursor: none;
+        display: none;
+    }
 
-    @keyframes appear {
-        from {
-            opacity: 0;
-            clip-path: inset(100% 100% 0 0);
-        }
-
-        to {
-            opacity: 1;
-            clip-path: inset(0 0 0 0);
-        }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
 
 
-    .box02 {
-        animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 18%;
+    .contact-info-box {
+        padding: 16px 1px;
+        border: 1px solid gray;
+        width: 21rem;
+        height: 4rem;
+        padding: 10px;
+
     }
 
-    .edu-box {
-        animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-    }
-    .contact-info-box{
-         animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+    .contact-info-text {
+        width: 100%;
+        /* border: 1px solid white; */
     }
 
+    .contact-form {}
+
+    .contact-header {
+        width: 9px;
+    }
+
+    .contact-form {}
 
 
+    .form-field {
+        border: 1px solid white;
+        width: 21rem;
+    }
 
+    .send-btn {
+        width: 21rem;
 
-
-
-
-
-
+    }
 }
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+
+
+.box02 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 18%;
+}
+
+.edu-box {
+    animation: appear linear;
+    animation-timeline: view();
+    border: 1px solid white;
+    animation-range: entry 0% cover 40%;
+}
+
+.contact-info-box {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
