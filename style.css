@@ -845,12 +845,6 @@ body {
     animation-range: entry 0% cover 18%;
 }
 
-.edu-box {
-    animation: appear linear;
-    animation-timeline: view();
-    border: 1px solid white;
-    animation-range: entry 0% cover 40%;
-}
 
 .contact-info-box {
     animation: appear linear;
