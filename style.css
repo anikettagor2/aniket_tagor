@@ -290,6 +290,7 @@ body {
     font-family: inter;
     padding: 10px;
     scroll-behavior: smooth;
+    margin-top:5rem;
 }
 
 .name_info {
