@@ -848,13 +848,13 @@ body {
     animation: appear linear;
     animation-timeline: view();
     border: 1px solid white;
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 10%;
 }
 
 .contact-info-box {
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 19%;
+    animation-range: entry 0% cover 18%;
 }
 
 
