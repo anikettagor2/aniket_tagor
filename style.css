@@ -848,7 +848,7 @@ body {
     animation: appear linear;
     animation-timeline: view();
     border: 1px solid white;
-    animation-range: entry 0% cover 10%;
+    animation-range: entry 0% cover 40%;
 }
 
 .contact-info-box {
